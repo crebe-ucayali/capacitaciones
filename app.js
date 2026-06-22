@@ -7,7 +7,7 @@ const capacitaciones = [
     recursos: {
       flyer: "imagenes/capacitacion-01/flyer.jpg",
       infografia: "imagenes/capacitacion-01/infografia.jpg",
-      diapositivas: "",
+      diapositivas: "documentos/capacitacion-01/diapositivas.pdf",
       video: "https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/preview",
       videoDrive: "https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/view"
     }
