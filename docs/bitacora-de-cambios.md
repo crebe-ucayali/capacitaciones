@@ -1,6 +1,6 @@
 # Bitácora de cambios
 
-Este documento registra los cambios principales realizados en el repositorio Capacitaciones CREBE Ucayali.
+Este documento registra los cambios principales realizados en el módulo **Capacitaciones Accesibles - CAP**, parte del **Ecosistema Virtual Accesible (EVA)**.
 
 La bitácora permite mantener un historial ordenado del crecimiento del proyecto, las mejoras realizadas, los materiales incorporados y los ajustes de accesibilidad, estructura o publicación.
 
@@ -8,7 +8,7 @@ La bitácora permite mantener un historial ordenado del crecimiento del proyecto
 
 ### 2026
 
-- Creación del repositorio Capacitaciones CREBE Ucayali.
+- Creación del repositorio CAP como módulo formativo del Ecosistema Virtual Accesible (EVA).
 - Definición del proyecto como recurso educativo digital personal.
 - Redacción del README con enfoque personal, educativo, formativo y no comercial.
 - Creación de documentos base en la carpeta `docs`.
@@ -18,10 +18,18 @@ La bitácora permite mantener un historial ordenado del crecimiento del proyecto
 
 ### 2026
 
-- Depuración de `app.js` para retirar la lógica del buscador que no tenía campo ni botón visible en `index.html`.
-- Ajuste del recurso de diapositivas de la primera capacitación para que figure como pendiente hasta verificar o reemplazar el PDF.
+- Depuración de `app.js` para ajustar la lógica de presentación de recursos.
+- Ajuste de recursos pendientes hasta verificar o reemplazar archivos no funcionales.
 - Corrección del README con la estructura real usada por el sitio.
 - Corrección de `docs/estructura-del-proyecto.md` con las rutas reales de imágenes y documentos.
+
+## Ajustes documentales
+
+### 2026
+
+- Se actualiza la documentación para presentar CAP como proyecto personal y módulo del Ecosistema Virtual Accesible (EVA).
+- Se retiran referencias institucionales de los documentos Markdown.
+- Se agrega documento raíz de autoría y documentos de finalidad funcional.
 
 ## Cambios por registrar
 
@@ -44,16 +52,6 @@ Se recomienda registrar cada cambio importante con los siguientes datos:
 - Mejora de accesibilidad visual.
 - Actualización de criterios de publicación.
 - Registro de fuentes y créditos.
-
-## Formato sugerido
-
-```text
-Fecha:
-Archivo o sección:
-Cambio realizado:
-Motivo:
-Observaciones:
-```
 
 ## Nota
 
