@@ -1,138 +1,79 @@
-# Capacitaciones CREBE Ucayali
+# Capacitaciones Accesibles - CAP
 
-Este repositorio forma parte de mi trabajo personal de organización, conservación y difusión de materiales educativos vinculados a Educación Especial, inclusión educativa, accesibilidad y atención a la diversidad.
+Capacitaciones Accesibles - CAP forma parte del Ecosistema Virtual Accesible, EVA. Este módulo corresponde a un proyecto personal desarrollado y organizado por el Psicólogo Gabriel Berrospi, orientado a reunir, ordenar y facilitar el acceso a recursos formativos, materiales de capacitación y contenidos de apoyo educativo.
 
-Lo desarrollo como un espacio digital de apoyo para reunir recursos formativos que puedan ser útiles para docentes, familias, directivos, profesionales de apoyo y comunidad educativa. Puede incluir videos, flyers, infografías, diapositivas, documentos de apoyo, enlaces complementarios y materiales utilizados en jornadas de capacitación, asistencia técnica, sensibilización u orientación.
+CAP se integra al EVA como un espacio para conservar y consultar presentaciones, documentos, infografías, videos, flyers, orientaciones y materiales vinculados a procesos de formación. Su estructura busca mantener una navegación clara, accesible y progresiva.
 
-El nombre del repositorio hace referencia al contexto educativo en el que estos materiales pueden tener uso y pertinencia. Cuando se vincule con acciones del CREBE "Señor de los Milagros" - Ucayali u otra institución, dicha referencia debe entenderse como contexto de uso o coordinación, no como transferencia de autoría del proyecto digital.
+## Naturaleza del proyecto
 
-## Enlace publicado
+CAP es un módulo personal, educativo, formativo, informativo y digital. Su desarrollo no corresponde a una creación institucional ni depende de una entidad externa. La estructura, organización, documentación, criterios de publicación, diseño funcional y mantenimiento forman parte del trabajo personal del autor dentro del EVA.
 
-https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/
+## Finalidad
 
-## Página principal del ecosistema
+La finalidad de CAP es contar con un espacio digital organizado para presentar, almacenar y consultar materiales de capacitación relacionados con inclusión, accesibilidad, atención a la diversidad y fortalecimiento de la práctica educativa.
 
-https://crebeucayali.weebly.com/
+## Objetivo
 
-## Finalidad del proyecto
+El objetivo de CAP es organizar y facilitar el acceso a materiales formativos mediante una estructura clara, accesible y escalable dentro del Ecosistema Virtual Accesible, EVA.
 
-La finalidad principal es contar con un espacio ordenado para presentar, conservar y consultar materiales de capacitación de manera clara, accesible y funcional.
+## Público al que se orienta
 
-Este repositorio busca facilitar la revisión posterior de los recursos, apoyar la continuidad de acciones formativas y servir como respaldo digital del trabajo educativo que voy organizando en torno a la inclusión, la accesibilidad y la atención a la diversidad.
+CAP está orientado a docentes, familias, estudiantes, profesionales vinculados al ámbito educativo y personas interesadas en recursos formativos relacionados con inclusión y accesibilidad.
 
-El proyecto tiene finalidad educativa, formativa y no comercial. No reemplaza los canales formales de comunicación institucional ni las disposiciones emitidas por las autoridades educativas correspondientes. Debe entenderse como un recurso personal de apoyo, difusión y organización pedagógica.
+## Contenido principal
 
-## Público al que se dirige
+El módulo puede incluir flyers, diapositivas, documentos de apoyo, infografías, videos, enlaces, materiales descargables, guías breves, orientaciones y evidencias digitales de actividades formativas.
 
-Este recurso puede ser útil para docentes, directivos, familias, profesionales de apoyo, instituciones educativas, equipos de Educación Básica Especial, Educación Básica Regular y personas interesadas en fortalecer prácticas inclusivas y accesibles.
+## Alcance
 
-También puede servir como material de apoyo para acciones de sensibilización, acompañamiento pedagógico, orientación familiar y capacitación continua en temas vinculados a discapacidad, inclusión educativa, accesibilidad y atención a la diversidad.
+El alcance de CAP es educativo, formativo, informativo y orientador. Sus contenidos funcionan como apoyo de consulta y no reemplazan procesos formales de formación, evaluación o acompañamiento especializado.
 
-## Contenidos que puede incluir
+## Escalabilidad
 
-- Flyers de difusión de capacitaciones.
-- Diapositivas utilizadas en jornadas formativas.
-- Infografías educativas.
-- Videos o enlaces a grabaciones.
-- Materiales descargables.
-- Orientaciones para docentes y familias.
-- Guías breves de uso pedagógico.
-- Evidencias digitales de actividades formativas.
-- Recursos complementarios sobre Educación Especial e inclusión educativa.
+CAP ha sido diseñado con posibilidad de crecimiento progresivo. Puede incorporar nuevas capacitaciones, subpáginas, categorías, recursos descargables, documentos, materiales multimedia, enlaces externos y herramientas de navegación.
 
-## Estructura real del sitio
+## Organización interna
+
+Estructura referencial del módulo:
 
 ```text
-capacitaciones-crebe-ucayali/
-│
+capacitaciones-accesibles/
 ├── index.html
 ├── estilos.css
 ├── app.js
 ├── README.md
+├── AUTORIA.md
 ├── LICENSE
-│
 ├── imagenes/
-│   └── capacitacion-01/
-│       ├── flyer.jpg
-│       └── infografia.jpg
-│
 ├── documentos/
-│   └── capacitacion-01/
-│       └── diapositivas.pdf
-│
 └── docs/
-    ├── autoria-y-contexto.md
-    ├── fuentes-y-creditos.md
-    ├── uso-permitido.md
-    ├── alcance-formativo.md
-    ├── criterios-de-publicacion.md
-    ├── estructura-del-proyecto.md
-    ├── bitacora-de-cambios.md
-    └── criterios-para-videos-y-flyers.md
 ```
-
-La estructura se organiza por capacitación. Cada jornada puede tener una carpeta propia, por ejemplo `capacitacion-01`, `capacitacion-02` o la numeración que corresponda. Dentro de cada carpeta se ubican los recursos reales usados por la página.
-
-En la versión actual, el video se enlaza desde Google Drive mediante el archivo `app.js`. Las diapositivas figuran como recurso pendiente hasta que el PDF sea verificado o reemplazado por un archivo funcional.
 
 ## Criterios de publicación
 
-Los materiales incorporados deben tener relación directa con acciones educativas, formativas, informativas o de sensibilización vinculadas a la atención a la diversidad. Se recomienda que cada recurso incluya título, fecha, tema, público al que se dirige, fuente y breve descripción de uso.
+Los contenidos incorporados en CAP deben mantener relación con la finalidad del módulo y con los objetivos generales del EVA. Cada recurso debe publicarse con una organización clara, manteniendo fuentes, créditos y condiciones de uso cuando corresponda.
 
-Cuando se utilicen materiales externos, se debe conservar la fuente correspondiente y respetar las condiciones de uso de cada documento, imagen, video, guía o recurso. Si un material pertenece a una entidad pública, privada o a un autor específico, su incorporación no debe presentarse como producción propia.
+## Identidad dentro del EVA
 
-## Alcance formativo
-
-Los contenidos de este repositorio tienen carácter orientador y formativo. Pueden apoyar procesos de capacitación, sensibilización, acompañamiento docente y fortalecimiento de prácticas inclusivas.
-
-Su uso debe adecuarse al contexto de cada institución educativa, a las características de los participantes, a las necesidades de apoyo identificadas y a las orientaciones pedagógicas vigentes. Los materiales no sustituyen la evaluación profesional, la planificación docente ni las decisiones institucionales que correspondan.
+CAP forma parte del Ecosistema Virtual Accesible, EVA, como módulo dedicado a la organización de capacitaciones y recursos formativos. Su identidad se construye a partir de su función específica y de su relación con los demás módulos del ecosistema.
 
 ## Autoría y desarrollo
 
-Proyecto desarrollado y organizado por Gabriel Berrospi como recurso digital personal de apoyo a la formación, accesibilidad e inclusión educativa.
+El diseño, estructura, organización, desarrollo técnico, selección funcional de contenidos, documentación y construcción general del módulo CAP corresponden al Psicólogo Gabriel Berrospi, en calidad de autor y desarrollador del Ecosistema Virtual Accesible, EVA.
 
-La organización del repositorio, la adaptación digital, la estructura de navegación, la selección y disposición de recursos corresponden al trabajo realizado para este proyecto, sin afectar la autoría o titularidad de materiales externos que puedan utilizarse como referencia o apoyo.
+## Uso del contenido
 
-Cuando el repositorio sea utilizado dentro de acciones del CREBE "Señor de los Milagros" - Ucayali u otra institución, debe conservarse el reconocimiento de autoría y la referencia de uso correspondiente. Esta referencia no implica transferencia de autoría ni uso libre de logos, nombres, materiales o documentos institucionales fuera del marco autorizado.
+Los contenidos de CAP tienen fines educativos, formativos, informativos y orientadores. No se autoriza presentar el módulo como desarrollo de terceros sin autorización expresa del autor. Los recursos externos conservan sus propias condiciones de autoría, uso y reproducción.
 
-## Uso permitido
+## Actualización y mejora continua
 
-El repositorio puede ser consultado y utilizado con fines educativos, formativos, pedagógicos y de sensibilización.
+CAP podrá ser actualizado, reorganizado o ampliado de manera progresiva, manteniendo la coherencia con la identidad general del EVA, la finalidad específica del módulo y el reconocimiento de autoría correspondiente.
 
-Toda reutilización debe conservar la referencia al proyecto, al autor responsable y a las fuentes externas empleadas en cada material. Cuando el recurso se use en un contexto institucional, debe mantenerse la referencia de uso correspondiente sin presentar el proyecto como propiedad institucional.
+## Datos de identificación
 
-No se autoriza el uso comercial de los contenidos, materiales, diseños, grabaciones, documentos o recursos vinculados al repositorio sin autorización correspondiente.
-
-## Licencia
-
-El código del repositorio se rige por el archivo `LICENSE`. Esta licencia no otorga automáticamente derechos sobre logos institucionales, videos, flyers, infografías, diapositivas, documentos externos, materiales educativos, recursos del Ministerio de Educación del Perú u otros contenidos elaborados por terceros.
-
-Los materiales externos mantienen sus propias condiciones de autoría, uso, difusión y reproducción.
-
-## Publicación en GitHub Pages
-
-El repositorio se publica como página web en GitHub Pages desde la rama principal y la carpeta raíz `/`.
-
-Enlace publicado:
-https://gabriel-lsp.github.io/capacitaciones-crebe-ucayali/
-
-## Estado del proyecto
-
-Repositorio en proceso de construcción y ampliación progresiva.
-
-Las siguientes etapas pueden incluir:
-
-- Organización de capacitaciones por fecha, tema y público objetivo.
-- Incorporación de nuevos flyers, infografías y diapositivas.
-- Verificación o reemplazo del archivo PDF de diapositivas.
-- Registro de fuentes y créditos de cada recurso.
-- Elaboración de criterios de publicación.
-- Mejora de accesibilidad visual y navegación.
-- Actualización de una bitácora de cambios.
-- Vinculación con otros recursos digitales accesibles del proyecto.
-
-## Créditos
-
-Capacitaciones CREBE Ucayali.  
-Repositorio desarrollado y organizado por Gabriel Berrospi.  
-Proyecto educativo personal, sin fines de lucro, orientado a la formación, accesibilidad, inclusión educativa y atención a la diversidad.
+Sigla del módulo: CAP  
+Nombre del módulo: Capacitaciones Accesibles  
+Proyecto mayor: Ecosistema Virtual Accesible, EVA  
+Autor y desarrollador: Psicólogo Gabriel Berrospi  
+Tipo de proyecto: Proyecto personal de carácter educativo, inclusivo y digital  
+Estado del proyecto: En construcción y ampliación progresiva
