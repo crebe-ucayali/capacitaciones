@@ -18,7 +18,8 @@ const capacitaciones = [
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
     recursos: {
-      infografia: "imagenes/capacitacion-02/Infografia.jpg"
+      infografia: "imagenes/capacitacion-02/Infografia.jpg",
+      diapositivas: "documentos/capacitacion-02/diapositivas.pdf"
     }
   },
   {
