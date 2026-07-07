@@ -27,7 +27,9 @@ const capacitaciones = [
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
     recursos: {
-      infografia: "imagenes/capacitacion-03/Infografia.jpg"
+      infografia: "imagenes/capacitacion-03/Infografia.jpg",
+      video: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xZnpJbVRMRXJab3NmUXBMbWxzRnF3aHdGU2VTbFdHZTIvcHJldmlldw=="),
+      videoDrive: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xZnpJbVRMRXJab3NmUXBMbWxzRnF3aHdGU2VTbFdHZTIvdmlldw==")
     }
   },
   {
