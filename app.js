@@ -7,7 +7,7 @@ const capacitaciones = [
     recursos: {
       flyer: "imagenes/capacitacion-01/flyer.jpg",
       infografia: "imagenes/capacitacion-01/infografia.jpg",
-      diapositivas: "documentos/capacitacion-01/diapositivas.pdf",
+      pdfDrive: "",
       video: "https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/preview",
       videoDrive: "https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/view"
     }
@@ -18,8 +18,11 @@ const capacitaciones = [
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
     recursos: {
+      flyer: "",
       infografia: "imagenes/capacitacion-02/Infografia.jpg",
-      diapositivas: "documentos/capacitacion-02/diapositivas.pdf"
+      pdfDrive: "",
+      video: "",
+      videoDrive: ""
     }
   },
   {
@@ -28,7 +31,9 @@ const capacitaciones = [
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
     recursos: {
+      flyer: "",
       infografia: "imagenes/capacitacion-03/Infografia.jpg",
+      pdfDrive: "",
       video: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xZnpJbVRMRXJab3NmUXBMbWxzRnF3aHdGU2VTbFdHZTIvcHJldmlldw=="),
       videoDrive: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xZnpJbVRMRXJab3NmUXBMbWxzRnF3aHdGU2VTbFdHZTIvdmlldw==")
     }
@@ -39,7 +44,9 @@ const capacitaciones = [
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
     recursos: {
+      flyer: "",
       infografia: "imagenes/capacitacion-04/Infografia.jpg",
+      pdfDrive: "",
       video: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xdkliY2I0WGZYNmJfQW5nT1VMZzUyYlk0dGk4Q0h6V0svcHJldmlldw=="),
       videoDrive: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xdkliY2I0WGZYNmJfQW5nT1VMZzUyYlk0dGk4Q0h6V0svdmlldw==")
     }
@@ -49,42 +56,42 @@ const capacitaciones = [
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: {}
+    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 17 de julio",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: {}
+    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 24 de julio",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: {}
+    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 31 de julio",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: {}
+    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 07 de agosto",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: {}
+    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 14 de agosto",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: {}
+    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
   }
 ];
 
@@ -105,35 +112,36 @@ function crearRecursoImagen(titulo, ruta, textoBoton, alt) {
     return crearRecursoPendiente(titulo, "Pendiente de subir", "Sin archivo");
   }
 
+  const rutaSegura = protegerHTML(ruta);
   return `
     <article class="recurso">
       <h4>${protegerHTML(titulo)}</h4>
-      <a class="vista-recurso" href="${ruta}" target="_blank" rel="noopener">
-        <img src="${ruta}" alt="${protegerHTML(alt)}" loading="lazy" decoding="async">
+      <a class="vista-recurso" href="${rutaSegura}" target="_blank" rel="noopener noreferrer">
+        <img src="${rutaSegura}" alt="${protegerHTML(alt)}" loading="lazy" decoding="async">
       </a>
-      <a class="boton-recurso" href="${ruta}" target="_blank" rel="noopener">
+      <a class="boton-recurso" href="${rutaSegura}" target="_blank" rel="noopener noreferrer">
         ${protegerHTML(textoBoton)}
       </a>
     </article>
   `;
 }
 
-function crearRecursoPDF(ruta) {
-  if (!ruta) {
-    return crearRecursoPendiente("Diapositivas PDF", "Pendiente de subir", "Sin archivo");
+function crearRecursoPDF(rutaDrive) {
+  if (!rutaDrive) {
+    return crearRecursoPendiente("PDF", "Pendiente de enlazar desde Google Drive", "Sin enlace");
   }
+
+  const enlaceExterno = rutaDrive.replace("/preview", "/view");
+  const enlaceSeguro = protegerHTML(enlaceExterno);
 
   return `
     <article class="recurso">
-      <h4>Diapositivas PDF</h4>
-      <div class="vista-recurso">
-        <iframe
-          src="${ruta}"
-          title="Vista previa de diapositivas en PDF">
-        </iframe>
+      <h4>PDF</h4>
+      <div class="vista-recurso marcador">
+        Documento almacenado en Google Drive. Se abrirá únicamente al hacer clic.
       </div>
-      <a class="boton-recurso" href="${ruta}" target="_blank" rel="noopener">
-        Abrir diapositivas
+      <a class="boton-recurso" href="${enlaceSeguro}" target="_blank" rel="noopener noreferrer">
+        Abrir PDF en Drive
       </a>
     </article>
   `;
@@ -156,7 +164,7 @@ function crearRecursoVideo(video, videoDrive) {
           Ver video
         </button>
       </div>
-      <a class="boton-recurso" href="${enlaceSeguro}" target="_blank" rel="noopener">
+      <a class="boton-recurso" href="${enlaceSeguro}" target="_blank" rel="noopener noreferrer">
         Abrir video en Drive
       </a>
     </article>
@@ -202,7 +210,7 @@ function crearTarjeta(capacitacion) {
             `Infografía de la capacitación ${capacitacion.titulo}`
           )}
 
-          ${crearRecursoPDF(recursos.diapositivas)}
+          ${crearRecursoPDF(recursos.pdfDrive)}
 
           ${crearRecursoVideo(recursos.video, recursos.videoDrive)}
         </div>
