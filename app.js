@@ -131,14 +131,18 @@ function crearRecursoPDF(rutaDrive) {
     return crearRecursoPendiente("PDF", "Pendiente de enlazar desde Google Drive", "Sin enlace");
   }
 
-  const enlaceExterno = rutaDrive.replace("/preview", "/view");
+  const enlaceExterno = rutaDrive.replace(/\/preview(?:\?.*)?$/, "/view");
+  const enlaceVistaPrevia = rutaDrive.replace(/\/view(?:\?.*)?$/, "/preview");
   const enlaceSeguro = protegerHTML(enlaceExterno);
+  const vistaPreviaSegura = protegerHTML(enlaceVistaPrevia);
 
   return `
     <article class="recurso">
       <h4>PDF</h4>
-      <div class="vista-recurso marcador">
-        Documento almacenado en Google Drive. Se abrirá únicamente al hacer clic.
+      <div class="vista-recurso pdf-recurso marcador" data-pdf-src="${vistaPreviaSegura}">
+        <button class="boton-recurso boton-cargar-pdf" type="button" data-pdf-src="${vistaPreviaSegura}">
+          Ver vista previa
+        </button>
       </div>
       <a class="boton-recurso" href="${enlaceSeguro}" target="_blank" rel="noopener noreferrer">
         Abrir PDF en Drive
@@ -234,6 +238,23 @@ function renderizarCapacitaciones(lista) {
   }
 }
 
+function cargarPDFDrive(boton) {
+  const contenedor = boton.closest(".pdf-recurso");
+  const pdf = boton.dataset.pdfSrc;
+
+  if (!contenedor || !pdf) return;
+
+  contenedor.classList.remove("marcador");
+  contenedor.innerHTML = `
+    <iframe
+      src="${pdf}"
+      title="Vista previa de las diapositivas en PDF"
+      loading="lazy"
+      allow="autoplay">
+    </iframe>
+  `;
+}
+
 function cargarVideoDrive(boton) {
   const contenedor = boton.closest(".video-recurso");
   const video = boton.dataset.videoSrc;
@@ -252,9 +273,16 @@ function cargarVideoDrive(boton) {
 }
 
 document.addEventListener("click", (evento) => {
+  const botonPDF = evento.target.closest(".boton-cargar-pdf");
+  if (botonPDF) {
+    cargarPDFDrive(botonPDF);
+    return;
+  }
+
   const botonVideo = evento.target.closest(".boton-cargar-video");
-  if (!botonVideo) return;
-  cargarVideoDrive(botonVideo);
+  if (botonVideo) {
+    cargarVideoDrive(botonVideo);
+  }
 });
 
 renderizarCapacitaciones(capacitaciones);
