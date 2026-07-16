@@ -7,7 +7,7 @@ const capacitaciones = [
     recursos: {
       flyer: "imagenes/capacitacion-01/flyer.jpg",
       infografia: "imagenes/capacitacion-01/infografia.jpg",
-      pdfDrive: "",
+      pdfDrive: "https://drive.google.com/file/d/1HNFoHBVokwRZFunaKFUv506sZ39fOjX_/view?usp=drive_link",
       video: "https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/preview",
       videoDrive: "https://drive.google.com/file/d/12sRjL1kb-4y8g3Tz8fpUpemK2Uzptkuz/view"
     }
@@ -20,7 +20,7 @@ const capacitaciones = [
     recursos: {
       flyer: "",
       infografia: "imagenes/capacitacion-02/Infografia.jpg",
-      pdfDrive: "",
+      pdfDrive: "https://drive.google.com/file/d/14ECDjqx7w25FTpz62BgIyrJoU7XtVDVS/view?usp=drive_link",
       video: "",
       videoDrive: ""
     }
@@ -33,7 +33,7 @@ const capacitaciones = [
     recursos: {
       flyer: "",
       infografia: "imagenes/capacitacion-03/Infografia.jpg",
-      pdfDrive: "",
+      pdfDrive: "https://drive.google.com/file/d/1ANmSOYaQrZZq1h3E2M8rSfdJ69-077Si/view?usp=drive_link",
       video: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xZnpJbVRMRXJab3NmUXBMbWxzRnF3aHdGU2VTbFdHZTIvcHJldmlldw=="),
       videoDrive: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xZnpJbVRMRXJab3NmUXBMbWxzRnF3aHdGU2VTbFdHZTIvdmlldw==")
     }
@@ -46,7 +46,7 @@ const capacitaciones = [
     recursos: {
       flyer: "",
       infografia: "imagenes/capacitacion-04/Infografia.jpg",
-      pdfDrive: "",
+      pdfDrive: "https://drive.google.com/file/d/1NwsWS2qGqmVcDB95OfeL0KxmRtjlj84S/view?usp=drive_link",
       video: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xdkliY2I0WGZYNmJfQW5nT1VMZzUyYlk0dGk4Q0h6V0svcHJldmlldw=="),
       videoDrive: atob("aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xdkliY2I0WGZYNmJfQW5nT1VMZzUyYlk0dGk4Q0h6V0svdmlldw==")
     }
@@ -56,7 +56,7 @@ const capacitaciones = [
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
+    recursos: { flyer: "", infografia: "", pdfDrive: "https://drive.google.com/file/d/1N2iQBMexK3Q1y425gi_JzWNNLq4GEvaj/view?usp=drive_link", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 17 de julio",
