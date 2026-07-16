@@ -181,8 +181,16 @@ function crearRecursoPendiente(titulo, mensaje, boton) {
   `;
 }
 
-function crearTarjeta(capacitacion) {
+function crearTarjeta(capacitacion, indice) {
   const recursos = capacitacion.recursos || {};
+  const cuadroFlyer = indice === 0
+    ? crearRecursoImagen(
+        "Flyer",
+        recursos.flyer,
+        "Abrir flyer",
+        `Flyer de la capacitación ${capacitacion.titulo}`
+      )
+    : "";
 
   return `
     <article class="capacitacion ${capacitacion.estado === "disponible" ? "disponible" : "pendiente"}">
@@ -196,12 +204,7 @@ function crearTarjeta(capacitacion) {
         </header>
 
         <div class="recursos" id="materiales">
-          ${crearRecursoImagen(
-            "Flyer",
-            recursos.flyer,
-            "Abrir flyer",
-            `Flyer de la capacitación ${capacitacion.titulo}`
-          )}
+          ${cuadroFlyer}
 
           ${crearRecursoImagen(
             "Infografía",
@@ -222,7 +225,9 @@ function crearTarjeta(capacitacion) {
 function renderizarCapacitaciones(lista) {
   if (!lineaTiempo) return;
 
-  lineaTiempo.innerHTML = lista.map(crearTarjeta).join("");
+  lineaTiempo.innerHTML = lista
+    .map((capacitacion, indice) => crearTarjeta(capacitacion, indice))
+    .join("");
 
   if (mensajeSinResultados) {
     mensajeSinResultados.hidden = lista.length > 0;
