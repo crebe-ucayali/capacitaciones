@@ -69,35 +69,35 @@ const capacitaciones = [
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
+    recursos: { flyer: "", infografia: "imagenes/capacitacion-06/infografia.jpeg", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 24 de julio",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
+    recursos: { flyer: "", infografia: "imagenes/capacitacion-07/infografia.jpeg", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 31 de julio",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
+    recursos: { flyer: "", infografia: "imagenes/capacitacion-08/infografia.jpeg", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 07 de agosto",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
+    recursos: { flyer: "", infografia: "imagenes/capacitacion-09/infografia.jpeg", pdfDrive: "", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 14 de agosto",
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: { flyer: "", infografia: "", pdfDrive: "", video: "", videoDrive: "" }
+    recursos: { flyer: "", infografia: "imagenes/capacitacion-10/infografia.jpeg", pdfDrive: "", video: "", videoDrive: "" }
   }
 ];
 
