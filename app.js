@@ -193,6 +193,7 @@ function crearRecursoPendiente(titulo, mensaje, boton) {
 
 function crearTarjeta(capacitacion, indice) {
   const recursos = capacitacion.recursos || {};
+  const modulo = indice < 5 ? "Módulo 1" : "Módulo 2";
   const cuadroFlyer = indice === 0
     ? crearRecursoImagen(
         "Flyer",
@@ -208,6 +209,7 @@ function crearTarjeta(capacitacion, indice) {
 
       <div class="tarjeta-capacitacion">
         <header class="cabecera-capacitacion">
+          <p class="seccion-etiqueta">${modulo}</p>
           <p class="fecha">${protegerHTML(capacitacion.fecha)}</p>
           <h3>${protegerHTML(capacitacion.titulo)}</h3>
           <p class="tema">${protegerHTML(capacitacion.tema)}</p>
