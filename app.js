@@ -20,7 +20,7 @@ const capacitaciones = [
     recursos: {
       flyer: "",
       infografia: "imagenes/capacitacion-02/Infografia.jpg",
-      pdfDrive: "https://drive.google.com/file/d/14ECDjqx7w25FTpz62BgIyrJoU7XtVDVS/view?usp=drive_link",
+      pdfDrive: "https://drive.google.com/file/d/1MSyDiHF1ffNNPFpiXs9diLafmHT9ms8I/view?usp=drive_link",
       video: "",
       videoDrive: ""
     }
@@ -56,7 +56,7 @@ const capacitaciones = [
     titulo: "Capacitación pendiente de registrar",
     tema: "Tema: pendiente de completar.",
     estado: "pendiente",
-    recursos: { flyer: "", infografia: "", pdfDrive: "https://drive.google.com/file/d/1N2iQBMexK3Q1y425gi_JzWNNLq4GEvaj/view?usp=drive_link", video: "", videoDrive: "" }
+    recursos: { flyer: "", infografia: "", pdfDrive: "https://drive.google.com/file/d/1MSyDiHF1ffNNPFpiXs9diLafmHT9ms8I/view?usp=drive_link", video: "", videoDrive: "" }
   },
   {
     fecha: "Viernes 17 de julio",
