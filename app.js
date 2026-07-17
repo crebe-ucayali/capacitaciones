@@ -193,7 +193,7 @@ function crearRecursoPendiente(titulo, mensaje, boton) {
 
 function crearTarjeta(capacitacion, indice) {
   const recursos = capacitacion.recursos || {};
-  const modulo = indice < 5 ? "Módulo 1" : "Módulo 2";
+  const modulo = indice < 5 ? "Módulo 1: Neurodiversidad" : "Módulo 2: Diseño Universal para el Aprendizaje (DUA)";
   const cuadroFlyer = indice === 0
     ? crearRecursoImagen(
         "Flyer",
